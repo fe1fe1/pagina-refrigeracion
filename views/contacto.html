@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/icono-copo.png">
+    <link rel="stylesheet" href="../styles/style_contacto.css" />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@500&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="icon" id="mainBtn">
+                    <img src="../img/icono-copo.png" alt="" class="icon-img">
+                    <h3>Buen Frio</h3>
+                </div>
+                <div class="container-enlaces">
+                    <ul class="enlaces">
+                        <li class="about">Sobre nosotros</li>
+                        <li class="contacto">Contacto</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form-container">
+            <form action="/contacto" method="POST">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Tu email...">
+
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                    <option value="Instalacion">Instalacion</option>
+                    <option value="Desinstalacion">Desinstalacion</option>
+                    <option value="Revision">Revision</option>
+                    <option value="Reparacion">Reparacion</option>
+                    <option value="Carga de gas">Carga de gas</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+
+        
+        <footer> 
+            <div class="container">
+                <ul class="redes">
+                    <li><a href ="https://www.facebook.com/"><img src="../img/icono-fb.png" alt="" class="icono-fb"></a></li>
+                    <li><a href ="https://www.instagram.com/"><img src="../img/icono-ig.png" alt="" class="icono-ig"></a></li>
+                    <li><a href ="https://twitter.com/"><img src="../img/icono-tw.png" alt="" class="icono-tw"></a></li>
+                </ul>
+            </div>
+            <div class="derechos">
+              <h3>© 2021 Copyright:francogm98@hotmail.com.ar</h3>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/contacto.script.js"></script>
+</body>
+</html>

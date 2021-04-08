@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:white;
+}
+
+/* nav bar */
+.nav-bar .container{
+    background-color: rgba(255, 255, 255, 0.596);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.1px 5.65px rgb(124, 124, 124);    
+}
+.nav-bar .icon{
+    display: flex;
+    cursor: pointer;
+}
+.nav-bar .container .icon h3{
+    font-family: 'Goldman';
+    margin:auto 20px;
+}
+.nav-bar .container .icon .icon-img{
+    height: 50px;
+}
+.nav-bar .container .icon{
+    padding: 5px;
+    padding-left: 10px;
+}
+ul{
+    list-style:none;
+}
+.container-enlaces ul{
+    font-family: 'Josefin', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+.container-enlaces ul li{
+    margin: 0 20px 0 20px;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:rgb(12, 163, 209);
+    border-color: rgb(12, 163, 209);
+    border-radius: 10px;
+    box-shadow: transparent;
+    border-style: solid;
+    transition: background-color 0.25s ease;
+}
+.container-enlaces ul li:hover{
+    transition: transform 0.25s 0.1s ease;
+    background-color: rgb(12, 163, 209);
+    color: white;
+    box-shadow:2px 2px 6px rgb(124, 124, 124);
+    transform:scale(1.035);
+    cursor: pointer;
+}
+/* nav bar */
+
+/* form */
+.form-container {
+   margin-bottom:2rem;
+   margin-left:30%;
+   margin-right:30%;
+   margin-top:2rem;
+   font-family: 'Josefin', Geneva, Verdana, sans-serif;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 10px;
+}
+input[type=text], select, textarea {
+    width:100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    
+    border-radius:4px;
+
+    box-sizing:border-box;
+
+    margin-top:6px;
+    margin-bottom:16px;
+
+    resize: vertical;
+}
+textarea{
+    min-height:100px;
+    max-height:550px;
+} 
+input[type=submit] {
+    background-color: white;
+    color:rgb(12, 163, 209);
+    padding: 12px 20px;
+    border-color: rgb(12, 163, 209);
+    border-radius: 10px;
+    box-shadow: transparent;
+    border-style: solid;
+    outline:none;
+}
+
+input[type=submit]:hover {
+    transition: transform 0.25s 0.1s ease;
+    background-color: rgb(12, 163, 209);
+    color: white;
+    cursor: pointer;
+}
+::-webkit-input-placeholder {
+    font: sans-serif, Geneva, Verdana;
+}
+::-moz-placeholder {
+    font: sans-serif, Geneva, Verdana;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font: sans-serif, Geneva, Verdana;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font: sans-serif, Geneva, Verdana;
+}
+/* form */
+
+/* footer */
+footer{
+    position:absolute;
+    box-shadow: 0 -8px 6px -7px rgba(124, 124, 124, 0.685);
+    bottom:-1px;
+    width: 100%;
+    height: 2rem; 
+    margin-top:4rem;
+}
+.redes{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:50%;
+    margin: 0px auto 0px auto;
+    padding:11.5px 100px 11.5px 100px;
+}
+.icono-fb{
+    width: 2.5em;
+    margin:10px;
+}
+.icono-ig{
+    width: 2.5em;
+    margin:10px;
+}
+.icono-tw{
+    width: 2.5em;
+    margin:10px;
+}
+.derechos{
+    display:block;
+    font-family: sans-serif;
+    margin:0px;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(12, 163, 209);
+}
+
+/* footer */
+
+/* error */
+
+.error-container{
+    margin:5rem;
+    text-align: center;
+    padding:3rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.error-container h3{
+
+    margin:1rem;
+}
+.error-container p{
+
+    margin:1rem;
+}
+.error-container .Volver{
+    margin:2rem auto 0 auto;
+    max-width:100px;    
+    font-weight:1px;
+    text-align:center;
+    font-family: 'Josefin', Geneva, Verdana, sans-serif;
+    background-color: white;
+    color:rgb(12, 163, 209);
+    border-color: rgb(12, 163, 209);
+    border-radius: 10px;
+    box-shadow: transparent;
+    border-style: solid;
+
+    cursor: pointer;
+}
+.error-container .Volver:hover{
+    transition: transform 0.25s 0.1s ease;
+    background-color: rgb(12, 163, 209);
+    color: white;
+    cursor: pointer;
+}
+/* error */

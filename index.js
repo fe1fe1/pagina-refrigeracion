@@ -1,11 +1,39 @@
-let contactBtn = document.getElementById("contactBtn");
-contactBtn.onclick = function (){
-    console.log('contacto clickeado');
-    location.href = "./contacto.html";
-}
+const express = require('express');
+const path = require('path');
 
-let indexBtn = document.getElementById("indexBtn");
-indexBtn.onclick = function (){
-    console.log('index clickeado');
-    location.href = "./index.html";
-}
+
+const app = express();
+
+const PORT = 3000;
+
+
+
+
+// archivos estaticos
+app.use(express.static(__dirname + '/'));
+
+// middlewares
+app.use(express.urlencoded({extended: false}));
+
+
+
+// enrutado provisorio
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'views','main.html'));
+});
+app.get('/main',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'views','main.html'));
+});
+app.get('/contacto',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'views','contacto.html'));
+});
+app.get('/contactoError',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'views','contactoError.html'));
+});
+
+
+// enrutado real
+app.use(require('./routes/contacto'));
+app.use(require('./routes/main'));
+
+app.listen(PORT,() => console.log('Server is starting on PORT, ', 3000));

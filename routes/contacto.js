@@ -11,9 +11,6 @@ const transporter = nodemailer.createTransport({
 })
 
 function mailOptions (form){
-    //console.log(form.email)
-    //console.log(form.asunto)
-    //console.log(form.mensaje)
     const mailOptions = {
         from: 'francogm98@hotmail.com',
         to: 'francogm98@hotmail.com',

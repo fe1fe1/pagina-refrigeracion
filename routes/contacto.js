@@ -2,6 +2,14 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
+router.route('/contacto').get((req,res)=>{
+    res.sendFile(path.join(__dirname,'../','views','contacto.html'));
+});
+router.route('/contactoError').get((req,res)=>{
+    res.sendFile(path.join(__dirname,'../','views','contactoError.html'));
+});
+
+
 const transporter = nodemailer.createTransport({
     service: 'hotmail',
     auth: {

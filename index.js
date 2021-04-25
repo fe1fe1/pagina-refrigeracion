@@ -15,24 +15,7 @@ app.use(express.static(__dirname + '/'));
 // middlewares
 app.use(express.urlencoded({extended: false}));
 
-
-
-// enrutado provisorio
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'views','main.html'));
-});
-app.get('/main',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'views','main.html'));
-});
-app.get('/contacto',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'views','contacto.html'));
-});
-app.get('/contactoError',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'views','contactoError.html'));
-});
-
-
-// enrutado real
+// enrutado 
 app.use(require('./routes/contacto'));
 app.use(require('./routes/main'));
 
